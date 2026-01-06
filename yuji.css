@@ -1,0 +1,72 @@
+.character-page {
+  background: #2e0808;
+  padding: 60px;
+}
+
+.character-card {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px;
+  background: rgba(138, 0, 0, 0.85);
+  border-left: 4px solid var(--accent);
+}
+
+.character-card h1 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.gojo   { --accent: #0062ff; }
+.yuji   { --accent: #ff3b3b; }
+.megumi { --accent: #282a43; }
+.sukuna { --accent: #9b0000; }
+.nobara { --accent: #ff4d6d; }
+.nanami { --accent: #d4a373; }
+
+.tagline {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.anime-text {
+  line-height: 1.9;
+  color: #d6d6d6;
+}
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.character-card {
+  background: black;
+  color: white;
+  padding: 30px;
+  margin: 40px;
+  border-left: 4px solid red;
+  cursor: pointer;
+}
+.animate {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: enter 0.8s forwards;
+}
+
+.animate {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: enter 0.8s forwards;
+}
+.ending-link {
+  display: block;
+  text-align: center;
+  margin: 80px 0;
+  color: red;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.ending-link:hover {
+  text-shadow: 0 0 20px red;
+}

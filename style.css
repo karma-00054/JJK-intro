@@ -1,0 +1,184 @@
+body {
+  background-color: #0b0b0f;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.anime-intro {
+  max-width: 700px;
+  margin: 100px auto;
+  padding: 40px;
+  background: linear-gradient(145deg, #111, #0b0b0f);
+  border-left: 4px solid #c1121f;
+  color: #e5e5e5;
+  box-shadow: 0 0 40px rgba(193, 18, 31, 0.15);
+}
+
+.anime-intro h1 {
+  font-size: 36px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.anime-intro p {
+  line-height: 1.8;
+  font-size: 16px;
+  color: #cccccc;
+}
+.anime-intro span {
+  display: block;
+  font-size: 14px;
+  color: #c1121f);
+  letter-spacing: 4px;
+}
+body {
+  background:
+    linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+    url("jujutsu kaisen.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.anime-intro h1 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.anime-intro p {
+  font-family: 'Orbitron', sans-serif;
+}
+@keyframes flicker {
+  0%   { opacity: 1; }
+  50%  { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+.anime-intro h1 {
+  animation: flicker cubic-bezier(0.215, 0.610, 0.355, 1) infinite;
+}
+.anime-intro h1 {
+  animation: flicker 4s infinite;
+}
+@keyframes flicker {
+  0% {
+    opacity: 1;
+    color: #ffffff;
+    text-shadow:
+      0 0 5px #c1121f,
+      0 0 15px #c1121f,
+      0 0 30px #ff0033;
+  }
+
+  10% {
+    opacity: 0.8;
+    color: #ffccd5;
+    text-shadow:
+      0 0 3px #c1121f,
+      0 0 8px #c1121f;
+  }
+
+  20% {
+    opacity: 1;
+    color: #ffffff;
+    text-shadow:
+      0 0 6px #ff0033,
+      0 0 20px #ff0033,
+      0 0 40px #ff0033;
+  }
+
+  30% {
+    opacity: 0.4;
+    color: #ffb3c1;
+    text-shadow: none;
+  }
+
+  40% {
+    opacity: 1;
+    color: #ffffff;
+    text-shadow:
+      0 0 8px #c1121f,
+      0 0 25px #ff0033,
+      0 0 50px #ff0033;
+  }
+
+  100% {
+    opacity: 0.9;
+    color: #ffffff;
+    text-shadow:
+      0 0 10px #ff0033,
+      0 0 30px #ff0033,
+      0 0 60px #ff0033;
+  }
+}
+.anime-intro {
+  position: relative;
+  max-width: 700px;
+  margin: 100px auto;
+  padding: 40px;
+  background: #0b0b0f;
+  color: white;
+  overflow: hidden;
+}
+.anime-intro {
+  position: relative;
+  max-width: 700px;
+  margin: 100px auto;
+  padding: 40px;
+  background: #0b0b0f;
+  color: white;
+  overflow: hidden;
+}
+.anime-intro::before {
+  content: "";
+  position: absolute;
+  inset: -20px;
+  background: radial-gradient(
+    circle,
+    rgba(193, 18, 31, 0.4),
+    transparent 70%
+  );
+  filter: blur(25px);
+  animation: aura 3s infinite alternate;
+  z-index: -1;
+}
+@keyframes aura {
+  0% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+}
+.anime-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow:
+    0 0 20px rgba(193, 18, 31, 0.6),
+    0 0 50px rgba(193, 18, 31, 0.3);
+  animation: imageGlow 2.5s infinite alternate;
+}
+@keyframes imageGlow {
+  0% {
+    box-shadow:
+      0 0 15px rgba(193, 18, 31, 0.4),
+      0 0 30px rgba(193, 18, 31, 0.2);
+  }
+  100% {
+    box-shadow:
+      0 0 30px rgba(193, 18, 31, 0.8),
+      0 0 70px rgba(193, 18, 31, 0.4);
+  }
+}
+.anime-intro:hover::before {
+  opacity: 1;
+  filter: blur(35px);
+}
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
