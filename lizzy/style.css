@@ -1,0 +1,104 @@
+/* ---------- Body & Layout ---------- */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #ff9966, #ff5e62, #8e44ad, #3498db); /* sunset gradient */
+  color: #fff;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* ---------- Container ---------- */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------- Headings ---------- */
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3em;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 8px #00000050; /* subtle shadow */
+  animation: pulse 2s infinite;
+}
+
+/* ---------- Paragraphs ---------- */
+p {
+  font-size: 1.2em;
+  line-height: 1.6em;
+  margin: 15px 0;
+  color: #fffcee; /* soft white-yellow for readability */
+}
+
+/* ---------- Image ---------- */
+img {
+  width: 80%;
+  max-width: 300px;
+  border-radius: 20px;
+  margin: 20px 0;
+  box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+/* ---------- Pulse Animation ---------- */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* ---------- Secret Button ---------- */
+.secret-button {
+  padding: 12px 25px;
+  font-size: 1.2em;
+  margin-top: 20px;
+  background: linear-gradient(45deg, #f1c40f, #e67e22); /* gold-orange gradient */
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  color: #fff;
+  transition: transform 0.2s;
+}
+
+.secret-button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #f39c12, #d35400);
+}
+
+/* ---------- Secret Message ---------- */
+#secretMessage {
+  display: none;
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #fffad1; /* soft cream */
+  text-shadow: 1px 1px 6px #00000050;
+}
+
+/* ---------- Mobile Responsiveness ---------- */
+@media(max-width: 400px) {
+  h1 { font-size: 2.2em; }
+  p { font-size: 1em; }
+  .secret-button { font-size: 1em; padding: 10px 20px; }
+}
+
+/* ---------- Confetti ---------- */
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  opacity: 0.9;
+  top: -10px;
+  animation: fall linear infinite;
+  z-index: 0;
+  border-radius: 2px;
+}
+
+@keyframes fall {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+}
